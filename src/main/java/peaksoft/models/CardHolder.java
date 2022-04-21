@@ -1,0 +1,74 @@
+package peaksoft.models;
+
+import java.util.Objects;
+
+/**
+ * @author Beksultan
+ */
+public class CardHolder {
+
+    private Long id;
+
+    private String name;
+
+    private String email;
+
+    private Long cardId;
+
+    public CardHolder() {
+    }
+
+    public CardHolder(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    public CardHolder(Long id, String name, String email, Long cardId) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.cardId = cardId;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Long getCardId() {
+        return cardId;
+    }
+
+    public void setCardId(Long cardId) {
+        this.cardId = cardId;
+    }
+
+    @Override
+    public String toString() {
+        return "CardHolder{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", cardId=" + cardId +
+                '}';
+    }
+}
